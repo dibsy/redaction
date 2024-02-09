@@ -27,4 +27,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
          name: Seatbelt.exe
-         path: ${{ env:GITHUB_WORKSPACE }}\Seatbelt\obj\Debug\
+         path: ${{ env.GITHUB_WORKSPACE }}\Seatbelt\obj\Debug\

@@ -1,0 +1,30 @@
+name: Build Seatbelt
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        repository: GhostPack/Seatbelt
+        ref: main  # You can specify the branch or tag you want to build
+
+    - name: Use .NET SDK 3.1
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '3.1.x'  # Choose the latest version compatible with your project
+
+    - name: Build Seatbelt
+      run: |
+        dotnet build -c Release -p:TargetFramework=net40
+        dotnet build -c Release -p:TargetFramework=net35

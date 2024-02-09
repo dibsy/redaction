@@ -17,7 +17,9 @@ jobs:
     - name: Use .NET SDK 3.1
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '5.0.0'  # Choose the latest version compatible with your project
+        dotnet-version: |
+          3.1.x
+          5.0.x
         
     - name: Checkout repository of Seatbelt
       uses: actions/checkout@v3

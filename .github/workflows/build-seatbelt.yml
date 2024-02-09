@@ -12,7 +12,6 @@ jobs:
   build:
     runs-on: windows-2019
     steps:
-    - uses: actions/checkout@v3
     - name: Checkout repository of Seatbelt
       uses: actions/checkout@v3
       with:

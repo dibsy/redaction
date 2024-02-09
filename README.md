@@ -8,7 +8,8 @@ A compilation of github actions scripts to build the useful binaries for Offensi
 - Feeling lazy to Setup windows, install Visual Studio and other dependencies.
 
 ## Examples
-- https://github.com/dibsy/redaction/tree/main/.github/workflows
+- Rubeus https://github.com/dibsy/redaction/blob/main/.github/workflows/build-rubeus.yml
+- Seatbelt https://github.com/dibsy/redaction/blob/main/.github/workflows/build-seatbelt.yml
   
 ## References
 - Compiling using .NET Framework 3.5 - https://github.com/orgs/community/discussions/25825

@@ -1,4 +1,4 @@
-name: Build Seatbelt
+name: Build Rubeus
 
 on:
   push:

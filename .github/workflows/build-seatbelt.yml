@@ -23,3 +23,7 @@ jobs:
       run: |
          cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\"
          .\MSBuild.exe $Env:GITHUB_WORKSPACE\Seatbelt\Seatbelt.csproj
+    - name: Run Seatbelt
+      run: |
+        cd $Env:GITHUB_WORKSPACE\Seatbelt\bin\Debug\
+        .\Seatbelt.exe -group=all -full 

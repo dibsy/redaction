@@ -21,5 +21,4 @@ jobs:
         
     - name: Build Seatbelt
       run: |
-        dotnet build -c Release -p:TargetFramework=net40
-        dotnet build -c Release -p:TargetFramework=net35
+        dotnet build -c Release

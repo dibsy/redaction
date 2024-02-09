@@ -13,12 +13,6 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        repository: GhostPack/Seatbelt
-        ref: main  # You can specify the branch or tag you want to build
-
     - name: Use .NET SDK 3.1
       uses: actions/setup-dotnet@v2
       with:

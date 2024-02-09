@@ -21,4 +21,4 @@ jobs:
         
     - name: Build Seatbelt
       run: |
-        dotnet build -c Release
+        dotnet build -c Debug

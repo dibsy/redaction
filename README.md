@@ -3,8 +3,21 @@
 A compilation of github actions scripts to build the useful binaries for Offensive and Defensive Purpose.
 
 ## Motivation
-- Build binaries instead of using the prebuilt one
+- Build binaries instead of using the prebuilt ones.
 - Use free resources and automation to achieve the above.
+- Feeling lazy to Setup windows, install Visual Studio and.
+  
+## How to use Github Actions for Building the Binaries
+- Create a blank project
+  - Imagine I would like have binaries for Seatbelt - https://github.com/GhostPack/Seatbelt
+  - In my personal github repository say ```myrepo``` I would create a workflow ```build-seatbelt.yml``` in the following structure
+```
+myrepo
+|-- .github
+|   |-- workflows
+|       |-- build-seatbelt.yml
+|-- other folders and files
+```    
 
 ## References
 - Compiling using .NET Framework 3.5 - https://github.com/orgs/community/discussions/25825
